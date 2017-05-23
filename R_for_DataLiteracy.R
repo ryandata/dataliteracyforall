@@ -5,9 +5,17 @@
 # 2017-05-23
 ###############################
 
+#setup
+
+# obtain a recent version of R from http://r-project.org
+# Windows users will want to download Rtools from the site as well.
+# and a recent version of RStudio from https://rstudio.com
+
+# later Image Magick will be useful http://imagemagick.com (linux/mac users may already have it)
 
 
-#install required packages for this session
+# install required packages for this session
+
 install.packages("WDI", dependencies=TRUE)
 install.packages("googleVis", dependencies=TRUE)
 install.packages("lattice", dependencies=TRUE)
