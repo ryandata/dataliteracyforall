@@ -1,0 +1,147 @@
+---
+title: "Data Literacy for All"
+author: "Ryan Womack"
+date: "May 23, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+First presented at IASSIST 2017
+
+May 23, 2017
+
+A work in progress!
+
+Ryan Womack, Data Librarian
+
+Rutgers University, rwomack@rutgers.edu
+
+<https://ryanwomack.com>
+
+
+### Outline
+
+1. What is data literacy?
+2. Packaging Data
+3. Packaging Functions
+4. Designing functions for data literacy and data exploration
+5. Interactivity - ggvis and googleVis
+6. Interactivity - shiny
+7. Interactivity - population pyramid
+
+### What is data literacy?
+
+Statistical literacy involves
+- Literacy (reading, but also including handling graphs, charts, and
+tables, and other forms of textual evidence)
+- Statistical
+- Mathematical
+- Context
+- Critical Skills
+
+Data literacy requires statistical literacy, but with more emphasis on data wrangling and data exploration.
+
+Prado and Manzi --> "access, interpret, critically assess, manage, handle and ethically use data”
+
+That is a lot. For education, often we need to focus on the core of statistical literacy in a gentle way before getting into the mechanical details of our software tools.
+
+As data professionals, we can do some of the work for our audiences to mask the complexity of the tools and highlight the data itself.
+
+### Packaging Data
+
+RStudio and RMarkdown <http://rmarkdown.rstudio.com/>
+
+Build Project
+<https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>
+and
+<https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages>
+
+Prepare and extract some data with WDI.R
+
+Structure of a package
+
+devtools
+use_data() command
+
+
+Note the drat package (<https://journal.r-project.org/archive/2017/RJ-2017-026/index.html>) allows for access to larger datasets.  CRAN has a 5 MB limit.
+
+A simple way to get started:
+<https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/>
+
+Hadley Wickham's R Packages (Recommended)
+<http://r-pkgs.had.co.nz/>
+
+Official CRAN documentation
+
+### Packaging Functions
+
+Writing a function
+Writing documentation
+Saving a function
+Checking and testing...
+Building and sharing a package
+
+
+Local, e.g.
+ library(mypkg, lib.loc = "f:/R-packages")
+
+RForge
+
+Github
+quick guide <http://rogerdudler.github.io/git-guide/>
+-- git init
+-- git add*
+-- git commit -m "message"
+-- git remote set-url origin https://github.com/ryandata/test11111.git
+-- git push origin master
+
+install_github("ryandata/test11111")
+
+### Designing functions for data literacy and data exploration
+
+We want to build functions that the end user can quickly apply to their own data exploration needs.
+
+One package designed for this is mosaic
+<https://journal.r-project.org/archive/2017/RJ-2017-024/index.html>
+
+### Interactivity - ggvis and googleVis
+
+ggvis <http://ggvis.rstudio.com> provides a lightweight way to introduce some dynamic, interactive elements to your plots
+
+googleVis is a relatively self-contained set of tools for quickly generating web-accessible interactive plots.  One downside is that it lacks customizability.
+One demo of googleVis
+<https://ryanwomack.com/ICPSR2015/>
+
+### Interactivity - shiny
+
+shiny <http://shiny.rstudio.com> provides a suite of tools to design customized interactive web-accessible data sites, while retaining R for data analysis.
+
+See the shinyapp.R file.
+
+### Interactivity - population pyramid
+
+Our final example illustrates the use of interactivity to uncover population patterns.
+
+See 
+<http://www.arilamstein.com/blog/2016/06/06/idbr-access-us-census-bureau-international-data-base-r/>
+
+<https://walkerke.github.io/2014/06/rcharts-pyramids/>
+
+
+Some of my other R materials may be found at 
+<http://libguides.rutgers.edu/data_R>
+
+### Lagniappe - Distributing files via PirateBox
+
+This is not really that difficult if you follow the instructions here:
+<https://piratebox.cc/openwrt:diy#post-installation>
+
+with a little customization help for your SSID and Home Page here:
+<https://www.youtube.com/watch?v=vc6od_2mess>
+<https://www.youtube.com/watch?v=asCC12QAHr0#t=19.562452>
+
+Keep exploring!
