@@ -9,7 +9,7 @@ setwd("/home/ryan/Desktop/R_for_DataLiteracy/github")
 # get your key at
 # http://api.census.gov/data/key_signup.html
 
-idb_api_key('0c48470badbfdfbb0475940b6374c09f2476720f')
+idb_api_key('your key here')
 
 countrycode<-c('UK')
 countryname<-"UK"
