@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<title>Title</title>
+</head>
+
+<body>
+
+<p>This is an illustration of smoothing methods.   Which is most appropriate for the data?</p>
+
+<!--begin.rcode fig.width=10, fig.height=10
+library(ggplot2)
+data(diamonds)
+library(ggvis)
+diamonds %>%
+  ggvis(~carat) %>%
+  layer_densities(
+    adjust = input_slider(.1, 2, value = 1, step = .1, label = "Bandwidth adjustment"),
+    kernel = input_select(
+      c("Gaussian" = "gaussian",
+        "Epanechnikov" = "epanechnikov",
+        "Rectangular" = "rectangular",
+        "Triangular" = "triangular",
+        "Biweight" = "biweight",
+        "Cosine" = "cosine",
+        "Optcosine" = "optcosine"),
+      label = "Kernel")
+  )
+end.rcode-->
+
+<p>You can also embed plots, for example:</p>
+
+<!--begin.rcode fig.width=7, fig.height=6
+plot(cars)
+end.rcode-->
+
+</body>
+</html>

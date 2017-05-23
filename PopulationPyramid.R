@@ -11,14 +11,14 @@ setwd("/home/ryan/Desktop/R_for_DataLiteracy/github")
 
 idb_api_key('0c48470badbfdfbb0475940b6374c09f2476720f')
 
-countrycode<-c('MG')
-countryname<-"Mongolia"
+countrycode<-c('UK')
+countryname<-"UK"
 startyear=2010
 endyear=2050
 
 
 
-male <- idb1(countrycode, startyear:endyear0c48470badbfdfbb0475940b6374c09f2476720f, sex = 'male') %>%
+male <- idb1(countrycode, startyear:endyear, sex = 'male') %>%
   mutate(POP = POP * -1,
          SEX = 'Male')
 

@@ -78,7 +78,7 @@ attach(diamonds)
 CompareIt<-function(a,b)
 {
   cat("Median ",median(a)," Mean ",mean(a))
-  cat("Median ",median(b)," Mean ",mean(b))
+  cat(" Median ",median(b)," Mean ",mean(b))
 }
 
 GraphIt<-function(a,b)
@@ -99,7 +99,7 @@ library(ggvis)
 
 diamonds %>% ggvis(~carat, ~price, fill=~clarity)
 
-diamonds %>% 
+diamonds %>%
   ggvis(~carat) %>%
   layer_densities(
     adjust = input_slider(.1, 2, value = 1, step = .1, label = "Bandwidth adjustment"),

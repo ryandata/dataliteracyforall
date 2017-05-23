@@ -39,7 +39,7 @@ server <- function(input, output) {
   ranges <- reactiveValues(x = NULL, y = NULL)
 
   output$plot1 <- renderPlot({
-    ggplot(diamonds, aes(carat, price)) +
+    ggplot(diamonds, aes(carat, price, color=cut)) +
       geom_point() +
       coord_cartesian(xlim = ranges$x, ylim = ranges$y, expand = FALSE)
   })
