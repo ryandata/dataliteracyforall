@@ -76,6 +76,7 @@ Hadley Wickham's R Packages (Recommended)
 <http://r-pkgs.had.co.nz/>
 
 Official CRAN documentation
+<https://cran.r-project.org/doc/manuals/R-exts.html>
 
 ### Packaging Functions
 
