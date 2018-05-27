@@ -2,7 +2,9 @@
 title: "Data Literacy for All, with R"
 author: "Ryan Womack"
 date: "May 29, 2018"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 First presented at IASSIST 2017, Lawrence, Kansas
@@ -31,15 +33,15 @@ Rutgers University, rwomack@rutgers.edu
 
 see associated slides, [Data_Literacy_for_All_Womack.pdf](https://github.com/ryandata/dataliteracyforall/blob/master/Data_Literacy_for_All_Womack.pdf)
 
-Statistical literacy involves
+**Statistical literacy** involves the following elements:
 - Literacy (reading, but also including handling graphs, charts, and
 tables, and other forms of textual evidence)
-- Statistical
-- Mathematical
+- Statistical knowledge
+- Mathematical knowledge
 - Context
 - Critical Skills
 
-Data literacy requires statistical literacy, but with more emphasis on data wrangling and data exploration.
+**Data literacy** requires statistical literacy, but with more emphasis on data wrangling and data exploration.
 
 Prado and Manzi --> "access, interpret, critically assess, manage, handle and ethically use data”
 
@@ -55,6 +57,10 @@ Build Project
 <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>
 and
 <https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages>
+<https://bookdown.org/rdpeng/RProgDA/building-r-packages.html>
+
+R CMD build packagename
+R CMD INSTALL packagename
 
 Prepare and extract some data with WDI.R
 
@@ -103,12 +109,11 @@ install_github("ryandata/test11111")
 
 We want to build functions that the end user can quickly apply to their own data exploration needs.
 
-One package designed for this is mosaic
-<https://journal.r-project.org/archive/2017/RJ-2017-024/index.html>
+One package designed for this is [mosaic](https://journal.r-project.org/archive/2017/RJ-2017-024/index.html)
 
 ### Interactivity - ggvis and googleVis
 
-ggvis <http://ggvis.rstudio.com> provides a lightweight way to introduce some dynamic, interactive elements to your plots
+[ggvis](http://ggvis.rstudio.com) provides a lightweight way to introduce some dynamic, interactive elements to your plots
 
 googleVis is a relatively self-contained set of tools for quickly generating web-accessible interactive plots.  One downside is that it lacks customizability.
 One demo of googleVis
@@ -116,7 +121,7 @@ One demo of googleVis
 
 ### Interactivity - shiny
 
-shiny <http://shiny.rstudio.com> provides a suite of tools to design customized interactive web-accessible data sites, while retaining R for data analysis.
+[shiny](http://shiny.rstudio.com) provides a suite of tools to design customized interactive web-accessible data sites, while retaining R for data analysis.
 
 See the shinyapp.R file.
 
