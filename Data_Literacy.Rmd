@@ -1,7 +1,7 @@
 ---
-title: "Data Literacy for All"
+title: "Data Literacy for All, with R"
 author: "Ryan Womack"
-date: "May 23, 2017"
+date: "May 29, 2018"
 output: html_document
 ---
 
@@ -9,11 +9,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-First presented at IASSIST 2017
+First presented at IASSIST 2017, Lawrence, Kansas
+updated for IASSIST 2018, Montréal, Québec
 
-May 23, 2017
-
-A work in progress!
+May 29, 2018
 
 Ryan Womack, Data Librarian
 
@@ -33,6 +32,8 @@ Rutgers University, rwomack@rutgers.edu
 7. Interactivity - population pyramid
 
 ### What is data literacy?
+
+see associated slides Data_Literacy_for_All_Womack.pdf
 
 Statistical literacy involves
 - Literacy (reading, but also including handling graphs, charts, and
