@@ -29,8 +29,7 @@ Rutgers University, rwomack@rutgers.edu
 
 ### What is data literacy?
 
-see associated slides 
-<https://github.com/ryandata/dataliteracyforall/blob/master/Data_Literacy_for_All_Womack.pdf>
+see associated slides, [Data_Literacy_for_All_Womack.pdf](https://github.com/ryandata/dataliteracyforall/blob/master/Data_Literacy_for_All_Womack.pdf)
 
 Statistical literacy involves
 - Literacy (reading, but also including handling graphs, charts, and
