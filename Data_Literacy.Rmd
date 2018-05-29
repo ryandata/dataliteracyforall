@@ -22,6 +22,8 @@ Rutgers University, rwomack@rutgers.edu
 
 ### Outline
 
+0. Setup
+
 1. What is data literacy?
 2. Packaging Data
 3. Packaging Functions
@@ -30,6 +32,15 @@ Rutgers University, rwomack@rutgers.edu
 6. Interactivity - population pyramid
 7. Building Instruction around Interactive Functions - the Rutgers Future Scholars
 8. Group Discussion
+
+### Setup
+
+This workshop uses a recent version of R (3.3 or later should be fine) and RStudio (1.1 or later).
+
+R is available at <https://r-project.org>
+
+RStudio is available at <https://rstudio.com>
+
 
 ### What is data literacy?
 
