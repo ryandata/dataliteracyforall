@@ -2,10 +2,9 @@
 title: "Data Literacy for All, with R"
 author: "Ryan Womack"
 date: "May 29, 2018"
-# output:
-#  slidy_presentation: default
-#  beamer_presentation: default
-
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 First presented at IASSIST 2017, Lawrence, Kansas
@@ -28,11 +27,13 @@ Rutgers University, rwomack@rutgers.edu
 4. Designing functions for data literacy and data exploration
 5. Interactivity - ggvis and googleVis
 6. Interactivity - shiny
-7. Interactivity - population pyramid
+7. Interactivity - population functions and pyramid
 
 ### What is data literacy?
 
 see associated slides, [Data_Literacy_for_All_Womack.pdf](https://github.com/ryandata/dataliteracyforall/blob/master/Data_Literacy_for_All_Womack.pdf)
+
+### Statistical Literacy
 
 **Statistical literacy** involves the following elements:
 - Literacy (reading, but also including handling graphs, charts, and
@@ -42,6 +43,8 @@ tables, and other forms of textual evidence)
 - Context
 - Critical Skills
 
+### Data Literacy
+
 **Data literacy** requires statistical literacy, but with more emphasis on data wrangling and data exploration.
 
 Prado and Manzi --> "access, interpret, critically assess, manage, handle and ethically use data”
@@ -50,7 +53,9 @@ That is a lot. For education, often we need to focus on the core of statistical 
 
 As data professionals, we can do some of the work for our audiences to mask the complexity of the tools and highlight the data itself.
 
-### Packaging Data
+### Packages
+
+Some guides:
 
 RStudio and RMarkdown <http://rmarkdown.rstudio.com/>
 
@@ -60,18 +65,15 @@ and
 <https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages>
 <https://bookdown.org/rdpeng/RProgDA/building-r-packages.html>
 
+### Packages - what are they
+
+The structure of a package
+
+How RStudio helps the process
+
+From the command line: use
 R CMD build packagename
 R CMD INSTALL packagename
-
-Prepare and extract some data with WDI.R
-
-Structure of a package
-
-devtools
-use_data() command
-
-
-Note the drat package (<https://journal.r-project.org/archive/2017/RJ-2017-026/index.html>) allows for access to larger datasets.  CRAN has a 5 MB limit.
 
 A simple way to get started:
 <https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/>
@@ -82,19 +84,38 @@ Hadley Wickham's R Packages (Recommended)
 Official CRAN documentation
 <https://cran.r-project.org/doc/manuals/R-exts.html>
 
+
+### Packaging Data 
+
+We will prepare and extract some data with WDI.R
+
+Any data can be stored as an R data file and bundled in a package.
+
+The "devtools" package has a useful 
+use_data() command.
+
+
+Note the drat package (<https://journal.r-project.org/archive/2017/RJ-2017-026/index.html>) allows for access to larger datasets.  CRAN has a 5 MB limit.
+
+
 ### Packaging Functions
 
-Writing a function
-Writing documentation
-Saving a function
-Checking and testing...
-Building and sharing a package
+We will walk through:
 
+* Writing a function
+* Writing documentation
+* Saving a function
+* Checking and testing...
+* Building and sharing a package
+
+### How to distribute your package
+
+We can distribute packages several ways
 
 Local, e.g.
  library(mypkg, lib.loc = "f:/R-packages")
 
-RForge
+RForge - like a Github for R
 
 Github
 quick guide <http://rogerdudler.github.io/git-guide/>

@@ -11,6 +11,7 @@
 # obtain a recent version of R from http://r-project.org
 # Windows users will want to download Rtools from the site as well.
 # and a recent version of RStudio from https://rstudio.com
+# or run on https://rstudio.cloud
 
 # later Image Magick will be useful http://imagemagick.com (linux/mac users may already have it)
 
@@ -30,13 +31,14 @@ install.packages("ggthemes", dependencies=TRUE)
 install.packages("dplyr", dependencies=TRUE)
 install.packages("gridExtra", dependencies=TRUE)
 install.packages("idbr", dependencies=TRUE)
-install.packages("animation", dependencies=TRUE)
 install.packages("mosaic", dependencies=TRUE)
 install.packages("manipulate", dependencies=TRUE)
 
 
 # replace with your directory name!
-setwd("/home/ryan/Desktop/R_for_DataLiteracy/github")
+# or not, if you want to use default directory
+
+setwd("/home/ryan/Desktop/dataliteracy/")
 
 # now create a New Package using menus in RStudio
 
