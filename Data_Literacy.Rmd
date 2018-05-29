@@ -3,8 +3,9 @@ title: "Data Literacy for All, with R"
 author: "Ryan Womack"
 date: "May 29, 2018"
 output:
-  pdf_document: default
   html_document: default
+  word_document: default
+  pdf_document: default
 ---
 
 First presented at IASSIST 2017, Lawrence, Kansas
@@ -25,9 +26,10 @@ Rutgers University, rwomack@rutgers.edu
 2. Packaging Data
 3. Packaging Functions
 4. Designing functions for data literacy and data exploration
-5. Interactivity - ggvis and googleVis
-6. Interactivity - shiny
-7. Interactivity - population functions and pyramid
+5. Interactivity - ggvis and shiny
+6. Interactivity - population pyramid
+7. Building Instruction around Interactive Functions - the Rutgers Future Scholars
+8. Group Discussion
 
 ### What is data literacy?
 
@@ -133,15 +135,9 @@ We want to build functions that the end user can quickly apply to their own data
 
 One package designed for this is [mosaic](https://journal.r-project.org/archive/2017/RJ-2017-024/index.html)
 
-### Interactivity - ggvis and googleVis
+### Interactivity - ggvis and shiny
 
 [ggvis](http://ggvis.rstudio.com) provides a lightweight way to introduce some dynamic, interactive elements to your plots
-
-googleVis is a relatively self-contained set of tools for quickly generating web-accessible interactive plots.  One downside is that it lacks customizability.
-One demo of googleVis
-<https://ryanwomack.com/ICPSR2015/>
-
-### Interactivity - shiny
 
 [shiny](http://shiny.rstudio.com) provides a suite of tools to design customized interactive web-accessible data sites, while retaining R for data analysis.
 
@@ -149,16 +145,42 @@ See the shinyapp.R file.
 
 ### Interactivity - population pyramid
 
-Our final example illustrates the use of interactivity to uncover population patterns.
+This example illustrates the use of interactivity to uncover population patterns.
 
 See 
 <http://www.arilamstein.com/blog/2016/06/06/idbr-access-us-census-bureau-international-data-base-r/>
 
 <https://walkerke.github.io/2014/06/rcharts-pyramids/>
 
+Some of my other R materials may be found at 
+<http://libguides.rutgers.edu/data_R>
+
+### Building Instruction around Interactive Functions - the Rutgers Future Scholars
+
+Materials for an introduction to data for [Rutgers Future Scholars](https://futurescholars.rutgers.edu) can be found at
+
+<http://libguides.rutgers.edu/rutgersfuturescholars>
+
+The pyramid.R file creates a set of functions using the Census International Data Base API.  These functions can be used to analyze population growth for any country and dates desired.
+
+Working with **real** and **live** data in a simple way motivates rapid growth in data literacy.
+
+We can build customized kits like this for many purposes, such as international data.
+The [ropensci](https://ropensci.org/) project is a leading example of the explosion of packages being created for open data and other innovative applications.  Data literacy should be a part of this trend.
 
 Some of my other R materials may be found at 
 <http://libguides.rutgers.edu/data_R>
+
+### Open Discussion
+
+* What do you see as areas that would benefit from this guided approach to data literacy?
+* Are there particular sources you would use?
+* Specific techniques you would focus use?
+* Which audiences would you design for?
+* What are the challenges you would face?
+* What is the role for data professionals?
+
+Live PollEverywhere at <https://pollev.com/ryanwomack427>
 
 ### Lagniappe - Distributing files via PirateBox
 

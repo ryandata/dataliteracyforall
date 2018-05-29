@@ -138,38 +138,65 @@ $(document).ready(function () {
 <li>Packaging Data</li>
 <li>Packaging Functions</li>
 <li>Designing functions for data literacy and data exploration</li>
-<li>Interactivity - ggvis and googleVis</li>
-<li>Interactivity - shiny</li>
+<li>Interactivity - ggvis and shiny</li>
 <li>Interactivity - population pyramid</li>
+<li>Building Instruction around Interactive Functions - the Rutgers Future Scholars</li>
+<li>Group Discussion</li>
 </ol>
 </div>
 <div id="what-is-data-literacy" class="section level3">
 <h3>What is data literacy?</h3>
 <p>see associated slides, <a href="https://github.com/ryandata/dataliteracyforall/blob/master/Data_Literacy_for_All_Womack.pdf">Data_Literacy_for_All_Womack.pdf</a></p>
+</div>
+<div id="statistical-literacy" class="section level3">
+<h3>Statistical Literacy</h3>
 <p><strong>Statistical literacy</strong> involves the following elements: - Literacy (reading, but also including handling graphs, charts, and tables, and other forms of textual evidence) - Statistical knowledge - Mathematical knowledge - Context - Critical Skills</p>
+</div>
+<div id="data-literacy" class="section level3">
+<h3>Data Literacy</h3>
 <p><strong>Data literacy</strong> requires statistical literacy, but with more emphasis on data wrangling and data exploration.</p>
 <p>Prado and Manzi –&gt; “access, interpret, critically assess, manage, handle and ethically use data”</p>
 <p>That is a lot. For education, often we need to focus on the core of statistical literacy in a gentle way before getting into the mechanical details of our software tools.</p>
 <p>As data professionals, we can do some of the work for our audiences to mask the complexity of the tools and highlight the data itself.</p>
 </div>
-<div id="packaging-data" class="section level3">
-<h3>Packaging Data</h3>
+<div id="packages" class="section level3">
+<h3>Packages</h3>
+<p>Some guides:</p>
 <p>RStudio and RMarkdown <a href="http://rmarkdown.rstudio.com/" class="uri">http://rmarkdown.rstudio.com/</a></p>
 <p>Build Project <a href="https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects" class="uri">https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects</a> and <a href="https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages" class="uri">https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages</a> <a href="https://bookdown.org/rdpeng/RProgDA/building-r-packages.html" class="uri">https://bookdown.org/rdpeng/RProgDA/building-r-packages.html</a></p>
-<p>R CMD build packagename R CMD INSTALL packagename</p>
-<p>Prepare and extract some data with WDI.R</p>
-<p>Structure of a package</p>
-<p>devtools use_data() command</p>
-<p>Note the drat package (<a href="https://journal.r-project.org/archive/2017/RJ-2017-026/index.html" class="uri">https://journal.r-project.org/archive/2017/RJ-2017-026/index.html</a>) allows for access to larger datasets. CRAN has a 5 MB limit.</p>
+</div>
+<div id="packages---what-are-they" class="section level3">
+<h3>Packages - what are they</h3>
+<p>The structure of a package</p>
+<p>How RStudio helps the process</p>
+<p>From the command line: use R CMD build packagename R CMD INSTALL packagename</p>
 <p>A simple way to get started: <a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/" class="uri">https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/</a></p>
 <p>Hadley Wickham’s R Packages (Recommended) <a href="http://r-pkgs.had.co.nz/" class="uri">http://r-pkgs.had.co.nz/</a></p>
 <p>Official CRAN documentation <a href="https://cran.r-project.org/doc/manuals/R-exts.html" class="uri">https://cran.r-project.org/doc/manuals/R-exts.html</a></p>
 </div>
+<div id="packaging-data" class="section level3">
+<h3>Packaging Data</h3>
+<p>We will prepare and extract some data with WDI.R</p>
+<p>Any data can be stored as an R data file and bundled in a package.</p>
+<p>The “devtools” package has a useful use_data() command.</p>
+<p>Note the drat package (<a href="https://journal.r-project.org/archive/2017/RJ-2017-026/index.html" class="uri">https://journal.r-project.org/archive/2017/RJ-2017-026/index.html</a>) allows for access to larger datasets. CRAN has a 5 MB limit.</p>
+</div>
 <div id="packaging-functions" class="section level3">
 <h3>Packaging Functions</h3>
-<p>Writing a function Writing documentation Saving a function Checking and testing… Building and sharing a package</p>
+<p>We will walk through:</p>
+<ul>
+<li>Writing a function</li>
+<li>Writing documentation</li>
+<li>Saving a function</li>
+<li>Checking and testing…</li>
+<li>Building and sharing a package</li>
+</ul>
+</div>
+<div id="how-to-distribute-your-package" class="section level3">
+<h3>How to distribute your package</h3>
+<p>We can distribute packages several ways</p>
 <p>Local, e.g. library(mypkg, lib.loc = “f:/R-packages”)</p>
-<p>RForge</p>
+<p>RForge - like a Github for R</p>
 <p>Github quick guide <a href="http://rogerdudler.github.io/git-guide/" class="uri">http://rogerdudler.github.io/git-guide/</a> – git init – git add* – git commit -m “message” – git remote set-url origin <a href="https://github.com/ryandata/test11111.git" class="uri">https://github.com/ryandata/test11111.git</a> – git push origin master</p>
 <p>install_github(“ryandata/test11111”)</p>
 </div>
@@ -178,22 +205,39 @@ $(document).ready(function () {
 <p>We want to build functions that the end user can quickly apply to their own data exploration needs.</p>
 <p>One package designed for this is <a href="https://journal.r-project.org/archive/2017/RJ-2017-024/index.html">mosaic</a></p>
 </div>
-<div id="interactivity---ggvis-and-googlevis" class="section level3">
-<h3>Interactivity - ggvis and googleVis</h3>
+<div id="interactivity---ggvis-and-shiny" class="section level3">
+<h3>Interactivity - ggvis and shiny</h3>
 <p><a href="http://ggvis.rstudio.com">ggvis</a> provides a lightweight way to introduce some dynamic, interactive elements to your plots</p>
-<p>googleVis is a relatively self-contained set of tools for quickly generating web-accessible interactive plots. One downside is that it lacks customizability. One demo of googleVis <a href="https://ryanwomack.com/ICPSR2015/" class="uri">https://ryanwomack.com/ICPSR2015/</a></p>
-</div>
-<div id="interactivity---shiny" class="section level3">
-<h3>Interactivity - shiny</h3>
 <p><a href="http://shiny.rstudio.com">shiny</a> provides a suite of tools to design customized interactive web-accessible data sites, while retaining R for data analysis.</p>
 <p>See the shinyapp.R file.</p>
 </div>
 <div id="interactivity---population-pyramid" class="section level3">
 <h3>Interactivity - population pyramid</h3>
-<p>Our final example illustrates the use of interactivity to uncover population patterns.</p>
+<p>This example illustrates the use of interactivity to uncover population patterns.</p>
 <p>See <a href="http://www.arilamstein.com/blog/2016/06/06/idbr-access-us-census-bureau-international-data-base-r/" class="uri">http://www.arilamstein.com/blog/2016/06/06/idbr-access-us-census-bureau-international-data-base-r/</a></p>
 <p><a href="https://walkerke.github.io/2014/06/rcharts-pyramids/" class="uri">https://walkerke.github.io/2014/06/rcharts-pyramids/</a></p>
 <p>Some of my other R materials may be found at <a href="http://libguides.rutgers.edu/data_R" class="uri">http://libguides.rutgers.edu/data_R</a></p>
+</div>
+<div id="building-instruction-around-interactive-functions---the-rutgers-future-scholars" class="section level3">
+<h3>Building Instruction around Interactive Functions - the Rutgers Future Scholars</h3>
+<p>Materials for an introduction to data for <a href="https://futurescholars.rutgers.edu">Rutgers Future Scholars</a> can be found at</p>
+<p><a href="http://libguides.rutgers.edu/rutgersfuturescholars" class="uri">http://libguides.rutgers.edu/rutgersfuturescholars</a></p>
+<p>The pyramid.R file creates a set of functions using the Census International Data Base API. These functions can be used to analyze population growth for any country and dates desired.</p>
+<p>Working with <strong>real</strong> and <strong>live</strong> data in a simple way motivates rapid growth in data literacy.</p>
+<p>We can build customized kits like this for many purposes, such as international data. The <a href="https://ropensci.org/">ropensci</a> project is a leading example of the explosion of packages being created for open data and other innovative applications. Data literacy should be a part of this trend.</p>
+<p>Some of my other R materials may be found at <a href="http://libguides.rutgers.edu/data_R" class="uri">http://libguides.rutgers.edu/data_R</a></p>
+</div>
+<div id="open-discussion" class="section level3">
+<h3>Open Discussion</h3>
+<ul>
+<li>What do you see as areas that would benefit from this guided approach to data literacy?</li>
+<li>Are there particular sources you would use?</li>
+<li>Specific techniques you would focus use?</li>
+<li>Which audiences would you design for?</li>
+<li>What are the challenges you would face?</li>
+<li>What is the role for data professionals?</li>
+</ul>
+<p>Live PollEverywhere at <a href="https://pollev.com/ryanwomack427" class="uri">https://pollev.com/ryanwomack427</a></p>
 </div>
 <div id="lagniappe---distributing-files-via-piratebox" class="section level3">
 <h3>Lagniappe - Distributing files via PirateBox</h3>
