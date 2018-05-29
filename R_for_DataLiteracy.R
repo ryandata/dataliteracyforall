@@ -2,7 +2,8 @@
 # Data Literacy for All, with R
 # IASSIST Workshop
 # Ryan Womack
-# 2017-05-23
+# created 2017-05-23
+# revised 2018-05-29
 ###############################
 
 #setup
@@ -28,6 +29,10 @@ install.packages("animation", dependencies=TRUE)
 install.packages("ggthemes", dependencies=TRUE)
 install.packages("dplyr", dependencies=TRUE)
 install.packages("gridExtra", dependencies=TRUE)
+install.packages("idbr", dependencies=TRUE)
+install.packages("animation", dependencies=TRUE)
+install.packages("mosaic", dependencies=TRUE)
+install.packages("manipulate", dependencies=TRUE)
 
 
 # replace with your directory name!
@@ -114,4 +119,7 @@ diamonds %>%
       label = "Kernel")
   )
 
-# use app.R file and PopulationPyramid.R file for the remainder of the exercise
+# use shinyapp.R file
+# PopulationPyramid.R file and
+# Population.R file
+# for the remainder of the exercise

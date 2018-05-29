@@ -1,4 +1,4 @@
-library(idbr) # devtools::install_github('walkerke/idbr')
+library(idbr)
 library(ggplot2)
 library(animation)
 library(dplyr)
@@ -11,12 +11,10 @@ setwd("/home/ryan/Desktop/R_for_DataLiteracy/github")
 
 idb_api_key('your key here')
 
-countrycode<-c('UK')
-countryname<-"UK"
+countrycode<-"MG"
+countryname<-"MG"
 startyear=2010
 endyear=2050
-
-
 
 male <- idb1(countrycode, startyear:endyear, sex = 'male') %>%
   mutate(POP = POP * -1,

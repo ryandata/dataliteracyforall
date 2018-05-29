@@ -2,9 +2,10 @@
 title: "Data Literacy for All, with R"
 author: "Ryan Womack"
 date: "May 29, 2018"
-output:
-  pdf_document: default
-  html_document: default
+# output:
+#  slidy_presentation: default
+#  beamer_presentation: default
+
 ---
 
 First presented at IASSIST 2017, Lawrence, Kansas
